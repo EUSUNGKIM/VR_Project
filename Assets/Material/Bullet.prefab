@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 8554311864661987759}
   - component: {fileID: 6437964037222165169}
   - component: {fileID: 6165121152177946929}
-  - component: {fileID: 2126576797778607563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,8 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266191eb28e95d1428b3fd7487530e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  lifetime: 3
+  bulletRange: 100
+  bulletHolePrefab: {fileID: 0}
+  bulletSpawnPoint: {fileID: 0}
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!54 &6165121152177946929
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -130,17 +133,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2126576797778607563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585074840042980549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 266191eb28e95d1428b3fd7487530e81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  lifetime: 3
